@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="asstes/styles/style.css">
+    <script src="asstes/scripts/script.js"></script>
+    <title>Monetary Conversor</title>
+</head>
+<body>
+    <main>
+        <div id="container">  
+
+            <div id="top">
+                <h1>Monetary Calculator</h1>
+            </div>
+
+            <div id="choice">
+                <h2>Selecione: </h2>
+
+                <div id="c1">
+                    <p>De:</p>
+                    <input type="radio" name="chor1" id="real1" class="boxchoices" oncheked="escolheu()">
+                    <label for="real1">Real</label>
+                    <input type="radio" name="chor1" id="euro1" class="boxchoices">
+                    <label for="euro1">Euro</label>
+                    <input type="radio" name="chor1" id="libra1" class="boxchoices">
+                    <label for="libra1">Libra</label>
+                    <input type="radio" name="chor1" id="iene1" class="boxchoices">
+                    <label for="iene1">Iene</label>
+                </div>
+
+                <div id="c2">
+                    <p>Para:</p>
+                    <input type="radio" name="chor2" id="real2" class="boxchoices">
+                    <label for="real2">Real</label>
+                    <input type="radio" name="chor2" id="euro2" class="boxchoices">
+                    <label for="euro2">Euro</label>
+                    <input type="radio" name="chor2" id="libra2" class="boxchoices">
+                    <label for="libra2">Libra</label>
+                    <input type="radio" name="chor2" id="iene2" class="boxchoices">
+                    <label for="iene2">Iene</label>
+                </div>
+            </div>
+
+            <div id="boxvalor">
+                <label for="ivalor" id="cifra">________</label>
+                <input type="number" name="valor" id="ivalor">
+            </div>
+        </div>
+    </main>
+</body>
+</html>
