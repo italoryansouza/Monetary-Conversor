@@ -20,7 +20,7 @@
 
                 <div id="c1">
                     <p>De:</p>
-                    <input type="radio" name="chor1" id="real1" class="boxchoices" value="R$" onclick="selecionou()">
+                    <input type="radio" name="chor1" id="real1" class="boxchoices" value="R$" onclick="selecionou()" checked>
                     <label for="real1">Real</label>
                     <input type="radio" name="chor1" id="euro1" class="boxchoices" value="€" onclick="selecionou()">
                     <label for="euro1">Euro</label>
@@ -32,23 +32,27 @@
 
                 <div id="c2">
                     <p>Para:</p>
-                    <input type="radio" name="chor2" id="real2" class="boxchoices">
+                    <input type="radio" name="chor2" id="real2" class="boxchoices" value="real2">
                     <label for="real2">Real</label>
-                    <input type="radio" name="chor2" id="euro2" class="boxchoices">
+                    <input type="radio" name="chor2" id="euro2" class="boxchoices" value="euro2">
                     <label for="euro2">Euro</label>
-                    <input type="radio" name="chor2" id="libra2" class="boxchoices">
+                    <input type="radio" name="chor2" id="libra2" class="boxchoices" value="libra2">
                     <label for="libra2">Libra</label>
-                    <input type="radio" name="chor2" id="iene2" class="boxchoices">
+                    <input type="radio" name="chor2" id="iene2" class="boxchoices" value="iene2">
                     <label for="iene2">Iene</label>
                 </div>
             </div>
 
             <div id="boxvalor">
-                <label for="ivalor" id="cifra">___</label>
+                <label for="ivalor"><p id="cifra" style="display: inline;">R$</p></label>
                 <input type="number" name="valor" id="ivalor">
             </div>
 
-            <button>aaa</button>
+            <div id="resultado">
+
+            </div>
+
+            <button onclick="calcular()">Calcular</button>
         </div>
     </main>
 </body>
