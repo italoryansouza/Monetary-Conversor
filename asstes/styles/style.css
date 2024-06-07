@@ -1,6 +1,127 @@
 @charset "UTF-8";
 
+/*First Mobile Version  */
+
+
+:root{
+    --fontbase: Verdana, Geneva, Tahoma, sans-serif;
+    --fontbtn: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    --corback: rgb(250, 165, 9);
+    --corhe: rgb(93, 253, 93);
+}
+
+
 * {
     margin: 0px;
     padding: 0px;
+}
+
+html, body{
+    background-color: var(--corback);
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    position: relative;
+    height: 100vh;
+}
+
+div#container {
+    background-color: rgba(255, 255, 255, 0.121);
+    background-position: center center;
+    width: 370px;
+    height: 400px;
+    padding: 18px 20px;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.468);
+    border-radius: 3px;
+    position: absolute;
+    overflow: hidden;
+
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+div#top {
+    background-color: var(--corhe);
+    border-radius: 3px 3px 0px 0px;
+    padding: 5px;
+}
+
+div#top > h1 {
+    font-family: var(--fontbase);
+    font-size: 1.6em;
+    font-weight: 600;
+    text-align: center;
+    font-variant: small-caps;
+}
+
+div.choice {
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+div.choice > h2 {
+    font-family: var(--fontbtn);
+    font-weight: normal;
+    color: white;
+}
+
+p.choicep {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 15px 0px;
+}
+
+input[type='radio'] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+label.boxchoices{
+    font-size: 1.2em;
+}
+
+p#cifra {
+    font-size: 2em;
+}
+
+div#boxcifra {
+    width: 30px;
+    text-align: center;
+    padding-right: 10px;
+}
+
+div#boxvalor {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    border-radius: 5px;
+
+    background-color: rgba(255, 255, 255, 0.208);
+    width: 329px;
+    height: 60px;
+}
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type='number'] {
+    height: 40px;
+    width: 250px;
+    padding-left: 10px;
+    font-size: 1.8em;
+    box-shadow: inset -1px 0px 19px rgba(255, 170, 0, 0.455);
+    background-color: rgba(255, 255, 255, 0.321);
+    border: 1px solid rgba(255, 255, 255, 0.929);
+}
+
+#btncal {
+    display: block;
+    margin: auto;
 }

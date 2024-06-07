@@ -15,44 +15,48 @@
                 <h1>Monetary Calculator</h1>
             </div>
 
-            <div id="choice">
+            <div class="choice">
                 <h2>Selecione: </h2>
 
                 <div id="c1">
-                    <p>De:</p>
-                    <input type="radio" name="chor1" id="real1" class="boxchoices" value="R$" onclick="selecionou()" checked>
-                    <label for="real1">Real</label>
-                    <input type="radio" name="chor1" id="euro1" class="boxchoices" value="€" onclick="selecionou()">
-                    <label for="euro1">Euro</label>
-                    <input type="radio" name="chor1" id="libra1" class="boxchoices" value="£" onclick="selecionou()">
-                    <label for="libra1">Libra</label>
-                    <input type="radio" name="chor1" id="iene1" class="boxchoices" value="¥" onclick="selecionou()">
-                    <label for="iene1">Iene</label>
+                    <p class="choicep">De:</p>
+
+                    <input type="radio" name="chor1" id="real1" value="R$" onclick="selecionou()" checked>
+                    <label for="real1" class="boxchoices">Real</label>
+                    <input type="radio" name="chor1" id="euro1" value="€" onclick="selecionou()">
+                    <label for="euro1" class="boxchoices">Euro</label>
+                    <input type="radio" name="chor1" id="libra1" value="£" onclick="selecionou()">
+                    <label for="libra1" class="boxchoices">Libra</label>
+                    <input type="radio" name="chor1" id="iene1" value="¥" onclick="selecionou()">
+                    <label for="iene1" class="boxchoices">Iene</label>
+                    <input type="radio" name="chor1" id="dolar1" value="$" onclick="selecionou()">
+                    <label for="dolar1" class="boxchoices">Dólar</label>
+
                 </div>
 
                 <div id="c2">
-                    <p>Para:</p>
-                    <input type="radio" name="chor2" id="real2" class="boxchoices" value="real2">
-                    <label for="real2">Real</label>
-                    <input type="radio" name="chor2" id="euro2" class="boxchoices" value="euro2">
-                    <label for="euro2">Euro</label>
-                    <input type="radio" name="chor2" id="libra2" class="boxchoices" value="libra2">
-                    <label for="libra2">Libra</label>
-                    <input type="radio" name="chor2" id="iene2" class="boxchoices" value="iene2">
-                    <label for="iene2">Iene</label>
+                    <p class="choicep">Para:</p>
+                    <input type="radio" name="chor2" id="real2" value="real2">
+                    <label for="real2" class="boxchoices">Real</label>
+                    <input type="radio" name="chor2" id="euro2" value="euro2">
+                    <label for="euro2" class="boxchoices">Euro</label>
+                    <input type="radio" name="chor2" id="libra2" value="libra2">
+                    <label for="libra2" class="boxchoices">Libra</label>
+                    <input type="radio" name="chor2" id="iene2" value="iene2">
+                    <label for="iene2" class="boxchoices">Iene</label>
+                    <input type="radio" name="chor2" id="dolar2" value="dolar2" onclick="selecionou()">
+                    <label for="dolar2" class="boxchoices">Dólar</label>
                 </div>
             </div>
 
             <div id="boxvalor">
-                <label for="ivalor"><p id="cifra" style="display: inline;">R$</p></label>
-                <input type="number" name="valor" id="ivalor">
+                <div id="boxcifra"><label for="ivalor"><p id="cifra" style="display: inline;">R$</p></label></div>
+                <input type="number" name="valor" id="ivalor" autocomplete="off">
             </div>
 
-            <div id="resultado">
+            <button onclick="calcular()" id="btncal">Calcular</button>
 
-            </div>
-
-            <button onclick="calcular()">Calcular</button>
+            <div id="resultado"></div>
         </div>
     </main>
 </body>
