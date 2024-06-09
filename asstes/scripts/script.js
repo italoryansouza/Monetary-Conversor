@@ -20,23 +20,28 @@ function calcular(){
         }
     }
 
+    number = getElementById('ivalor')
+    numberval = number.value;
+
     // Cálculos:
 
     //Reais
     if(vde == "R$" && vpara == "real2"){
-        resultado.innerHTML = 'Você escolheu Reais no De e Reais no Para'
+        resultado.style.display = 'block'
+        resultado.innerHTML = String('aaaaa')
     }
     else if(vde == "R$" && vpara == "euro2"){
-        resultado.innerHTML = 'Você escolheu Reais no De e Euro no Para'
+        resultado.style.display = 'block'
+        resultado.innerHTML = 
     }
     else if(vde == "R$" && vpara == "libra2"){
-        resultado.innerHTML = 'Você escolheu Reais no De e libra no Para'
+        resultado.innerHTML = 
     }
     else if(vde == "R$" && vpara == "iene2"){
-        resultado.innerHTML = 'Você escolheu Reais no De e Iene no Para'
+        resultado.innerHTML = 
     }
     else if(vde == "R$" && vpara == "dolar2"){
-        resultado.innerHTML = 'Você escolheu Reais no De e Dolar no Para'
+        resultado.innerHTML = 
     }
 
     //Euro

@@ -31,7 +31,7 @@ div#container {
     background-color: rgba(255, 255, 255, 0.121);
     background-position: center center;
     width: 370px;
-    height: 400px;
+    height: 470px;
     padding: 18px 20px;
     box-sizing: border-box;
     box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.468);
@@ -124,4 +124,25 @@ input[type='number'] {
 #btncal {
     display: block;
     margin: auto;
+}
+
+#btncal {
+    background-color: white;
+    font-size: var(--fontbtn);
+    font-weight: bolder;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    margin: 10px auto;
+    height: 30px;
+    width: 100px;
+}
+
+div#resultado{
+    background-color: white;
+    font-family: var(--fontbase);
+    font-size: 1em;
+    padding: 10px;
+    text-align: center;
+    display: none;
 }
